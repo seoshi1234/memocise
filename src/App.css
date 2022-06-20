@@ -1,0 +1,13 @@
+.App {
+  overflow-x: hidden;
+  
+}
+.outlineBtn{
+  font-size:16px;
+  margin-top:10px;
+  outline:solid white 0px;
+  border-bottom: 1px solid;
+  width:max-content;
+  cursor:pointer;
+}
+

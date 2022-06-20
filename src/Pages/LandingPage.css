@@ -1,0 +1,27 @@
+.landingPage{
+  color:white;
+  width:100vw;
+  height:100vh;  
+  position: absolute;
+  background-image: linear-gradient(90deg, #222 0%,rgba(0,0,0,.8) 50%,rgba(255, 255, 255, 0) 100%),
+  url('./LandingPage.png');
+  background-size: cover;
+  background-position: center;
+}
+.landingPage__contents{
+  margin-top: 20vh;
+  margin-left: 5vw;
+}
+.landingPage__logo{
+  background: #E8D31A;
+  background: linear-gradient(to right, #E8D31A 0%, #36F2FF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 90px;
+  font-family: 'Do Hyeon', sans-serif;  
+  line-height: 1em;
+}
+.landingPage__text{
+  font-size:40px;
+  font-weight: bold;
+}

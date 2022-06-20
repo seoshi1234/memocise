@@ -1,0 +1,49 @@
+.exercise{
+  border: 4px dashed white;
+  border-radius: 30px;
+  width:80vw;
+  min-height: 200px;
+  display: flex;  
+  margin:30px;
+  color:white;
+}
+.exercisePlan{
+  padding:30px;
+  width:100%;
+}
+.exercisePlan__exerciseForm{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.exercise.empty{
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width:30em) {
+  .exercise{
+    font-size: 12px;
+    margin:10px;
+  }
+  .exercisePlan{
+    padding:20px;
+  }
+  .exercise button{
+    font-size: 12px;
+    padding:5px;
+    height:20px;
+    min-width: 20px;
+  }
+  .exercise input{
+    font-size :12px;
+    padding:10px;
+    height:30px;
+  }
+  .exercise label{
+    font-size:12px;
+  }
+  .exercise .chakra-form__helper-text{
+    font-size: 12px;
+  }
+}

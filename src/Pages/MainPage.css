@@ -1,0 +1,18 @@
+.mainPage{
+  background-color: #001E3C;
+  width:100vw;
+  min-height:100vh;
+}
+.mainPage__header{
+  width:100vw;
+  height:200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mainPage__exercises{
+  width:100vw;
+  display: flex;
+  flex-wrap: wrap;  
+  justify-content: center;
+}

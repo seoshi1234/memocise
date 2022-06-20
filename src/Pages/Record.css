@@ -1,0 +1,25 @@
+.record{
+  width:100%;  
+  display: flex;    
+  color:white;
+  padding:30px;
+}
+
+.recordForm{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.record.empty{
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width:30em) {
+  .record{
+    font-size: 12px;
+    padding:10px;
+  }
+  
+  
+}

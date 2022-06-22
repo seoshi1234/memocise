@@ -24,7 +24,7 @@ import
 {
   AddIcon, ChevronDownIcon, ChevronUpIcon
 }from '@chakra-ui/icons'
-import {ExerciseRecord} from '../Models/ExerciseModel'
+import {ExerciseRecord} from '../Models/ExerciseTypes'
 import { arrayUnion, db } from '../firebase'
 interface RecordProps{
   recordID?:string,

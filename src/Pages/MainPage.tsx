@@ -20,11 +20,11 @@ import
   NumberDecrementStepper,
   FormHelperText
 } from '@chakra-ui/react'
-import Exercise from './Exercise'
+import Exercise from '../Components/Exercise'
 import { ArrowUpIcon } from '@chakra-ui/icons';
 import { arrayUnion, db } from '../firebase';
 import {User} from '@firebase/auth'
-import { ExercisePlan } from '../Models/ExerciseModel';
+import { ExercisePlan } from '../Models/ExerciseTypes';
 
 
 interface MainPageProps{   

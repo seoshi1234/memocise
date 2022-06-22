@@ -29,7 +29,7 @@ import {
 import './Exercise.css'
 import React, { useEffect, useState } from 'react'
 import {AddIcon,ArrowUpIcon} from '@chakra-ui/icons'
-import {ExercisePlan,ExerciseRecord} from '../Models/ExerciseModel'
+import {ExercisePlan,ExerciseRecord} from '../Models/ExerciseTypes'
 import { arrayRemove, arrayUnion, db } from '../firebase'
 import Record from './Record'
 import {User} from '@firebase/auth'
@@ -117,7 +117,7 @@ function Exercise(props:ExerciseProps) {
               <FormErrorMessage>휴식시간이 0초 이상이어야 되요!</FormErrorMessage>:                
               <></>
             }
-            <NumberInput w={20} h={10} mr={[2,4]}id='loadCount' value={loadCount} onChange={(value)=>setLoadCount(Number(value))} >
+            <NumberInput w={20} mr={[2,4]}id='loadCount' value={loadCount} onChange={(value)=>setLoadCount(Number(value))} >
               <NumberInputField/>
               <NumberInputStepper>
                 <NumberIncrementStepper/>
@@ -149,10 +149,10 @@ function Exercise(props:ExerciseProps) {
               console.log(el[1].day);
               if(i <= loadCount-1)
               return (
-              <>
-                <Record recordID={el[0]} record={el[1]} key={i} refreshPage={props.refreshPage} restDuration={Number(restDuration)} isRecent={i==0}/>
-                <Divider w={'100%'}/>
-              </>
+              <Box key={i}>
+                <Record recordID={el[0]} record={el[1]} refreshPage={props.refreshPage} restDuration={Number(restDuration)} isRecent={i==0}/>
+                <Divider w={'100%'} />
+              </Box>
               );
               else
               return(<></>);

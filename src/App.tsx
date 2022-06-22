@@ -17,7 +17,7 @@ import {
   FormControl,
   FormErrorMessage
 } from '@chakra-ui/react'
-import {ExercisePlan} from './Models/ExerciseModel';
+import {ExercisePlan} from './Models/ExerciseTypes';
 import LandingPage from './Pages/LandingPage';
 import MainPage from './Pages/MainPage';
 
